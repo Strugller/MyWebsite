@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width",initial-scale="1.0">
+    <title>Contact| Hrushikesh</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <button onclick="toggleDarkMode()" class="button">Toggle Dark Mode</button>
+  
+<form
+  action="https://formspree.io/f/xqaqawdr"
+  method="POST">
+<label>Your name:</label><br>
+<input type="text" name="name" required><br><br>
+  <label>
+    Your email:
+    <input type="email" name="email"><br><br>
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea><br><br>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button><br><br>
+</form>
+<p><a href="index.html" class="button">Back to home</a></p>
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+
+</body>
+
+</html>
